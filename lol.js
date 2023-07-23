@@ -1,10 +1,5 @@
 const dispPage = (sym)=>{
-   if(document.getElementById("21").innerHTML == 5){
-      document.getElementById("19").innerHTML="YOU WON AGAINST PC";
-   } 
-   else if (document.getElementById("22").innerHTML == 5) {
-      document.getElementById("19").innerHTML="PC WON AGAINST YOU";
-   } 
+   
          document.getElementById("13").style.display="none";
          document.getElementById("14").style.display="flex";
          if(sym == 'Rock')
@@ -43,12 +38,12 @@ const pointsReview = (hand,cppHand)=>{
 
          if(hand=="Paper" && cppHand=="Rock"){
             res.innerHTML="YOU WIN";
-            // sco.innerHTML+=1;
+            
             sco.innerHTML=parseInt(sco.innerHTML)+1;
          }
          else if (hand=="Paper" && cppHand=="Scissors") {
             res.innerHTML="YOU LOSE";
-            // scot.innerHTML+=1;
+            
             scot.innerHTML=parseInt(scot.innerHTML)+1;
          }
          else if(hand=="Paper" && cppHand=="Paper"){
@@ -81,11 +76,4 @@ const pointsReview = (hand,cppHand)=>{
             document.getElementById("13").style.display="flex";
             document.getElementById("14").style.display="none";
          }
-         if(document.getElementById("21") == 5){
-            document.getElementById("19").innerHTML="YOU WON AGAINST PC";
-
-         } 
-         else if (document.getElementById("22") == 5) {
-            document.getElementById("19").innerHTML="PC WON AGAINST YOU";
-         } 
-         document.getElementById("19").innerHTML="YOU WON AGAINST PC";
+        
