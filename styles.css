@@ -58,7 +58,6 @@ input{
 .inp1 p, .inp2 p{
     font-size:65px;
     text-align: center;
-    /* padding-top: 22px; */
     font-weight: 1000;
     color: #4c6935;
     letter-spacing: 3px;
@@ -85,7 +84,7 @@ img {
 }
 .game :hover{
     transform: translate3d(0px,-10px,0px);
-   // cursor: pointer;
+  
 }
 .resultpage{
     display: flex;
